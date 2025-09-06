@@ -7,6 +7,6 @@
 /// <Attachment>addition.zip</Attachment>
 ///</Info>
 ///<Solve>solve.py</Solve>
-///<Flag></Flag>
+///<Flag>ictf{i_love_finding_offsets_4fd29170cb90}</Flag>
 
 challenge.lock contains all of the files provided and the description of the challenge that was completed as well as the solve script titled `solve.*`.
